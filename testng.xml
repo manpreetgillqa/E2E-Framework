@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel = "tests">
+<listeners>
+<listener class-name = "qaAcademy.listeners"/>
+</listeners>
+  <test thread-count="5" name="Validating user login">
+    <classes>
+      <class name="qaAcademy.HomePage"/>
+      </classes>
+  </test>
+      <test thread-count="5" name="Validating the navigation bar">
+      <classes>
+      <class name="qaAcademy.validateNavigationBar"/>
+      </classes>
+  </test>
+      <test thread-count="5" name="Validating the title on the page">
+      <classes>
+      <class name="qaAcademy.HomePageTest"/>
+      </classes>
+  </test>
+</suite> <!-- Suite -->
